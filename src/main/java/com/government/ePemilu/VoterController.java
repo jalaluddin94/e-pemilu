@@ -21,7 +21,7 @@ public class VoterController {
     }
 
     @GetMapping(path="/voters/{nik}")
-    public String nikVoter(@PathVariable String nik){
-        return String.format("NIK = %s", nik);
+    public Voters voterByNik(@PathVariable("nik") String nik){
+        return votersService.voterByNik(nik);
     }
 }

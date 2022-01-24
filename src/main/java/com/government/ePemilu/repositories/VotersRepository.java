@@ -7,4 +7,5 @@ import com.government.ePemilu.models.Voters;
 
 @Repository
 public interface VotersRepository extends JpaRepository<Voters, Long> {
+    Voters findVotersByNik(String nik);
 }

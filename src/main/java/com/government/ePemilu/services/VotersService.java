@@ -12,9 +12,14 @@ import com.government.ePemilu.repositories.VotersRepository;
 public class VotersService {
     @Autowired
     VotersRepository votersRepository;
+
     public List<Voters> allVoters(){
         List<Voters> voters = new ArrayList<Voters>();
         votersRepository.findAll().forEach(voters1 -> voters.add(voters1));
         return voters;
+    }
+
+    public Voters voterByNik(String inputNik){
+        return votersRepository.findVotersByNik(inputNik);
     }
 }
