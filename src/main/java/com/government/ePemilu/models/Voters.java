@@ -8,31 +8,31 @@ public class Voters {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int idVoter;
+    private int id;
 
     @Column
-    private String nikVoter;
+    private String nik;
 
     @Column
-    private String namaLengkapVoter;
+    private String namaLengkap;
 
     public int getIdVoter(){
-        return idVoter;
+        return id;
     }
 
     public String getNikVoter(){
-        return nikVoter;
+        return nik;
     }
 
-    public void setNikVoter(String nik){
-        this.nikVoter = nik;
+    public void setNikVoter(String inputNik){
+        this.nik = inputNik;
     }
 
     public String getNamaLengkapVoter(){
-        return namaLengkapVoter;
+        return namaLengkap;
     }
 
-    public void setNamaLengkapVoter(String namaLengkap){
-        this.namaLengkapVoter = namaLengkap;
+    public void setNamaLengkapVoter(String inputNamaLengkap){
+        this.namaLengkap = inputNamaLengkap;
     }
 }
