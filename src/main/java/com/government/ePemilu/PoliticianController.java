@@ -27,7 +27,7 @@ public class PoliticianController {
 
     @ApiOperation("View voter details by NIK")
     @GetMapping(path="/politicians/{nik}")
-    public Politicians voterByNik(@PathVariable("nik") String nik){
+    public Politicians politiciansByNik(@PathVariable("nik") String nik){
         return politiciansService.politicianByNik(nik);
     }
 

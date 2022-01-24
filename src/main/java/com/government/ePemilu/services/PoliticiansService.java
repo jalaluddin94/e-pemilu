@@ -15,7 +15,7 @@ public class PoliticiansService {
 
     public List<Politicians> allPoliticians(){
         List<Politicians> politicians = new ArrayList<Politicians>();
-        politiciansRepository.findAll().forEach(voters1 -> politicians.add(voters1));
+        politiciansRepository.findAll().forEach(politician1 -> politicians.add(politician1));
         return politicians;
     }
 
