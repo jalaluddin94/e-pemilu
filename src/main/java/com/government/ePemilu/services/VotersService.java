@@ -22,4 +22,12 @@ public class VotersService {
     public Voters voterByNik(String inputNik){
         return votersRepository.findVotersByNik(inputNik);
     }
+
+    public void createOrUpdateVoter(Voters voters){
+        votersRepository.save(voters);
+    }
+
+    public void updateVoter(Voters voters, int idVoter){
+        votersRepository.save(voters);
+    }
 }
