@@ -1,7 +1,9 @@
 package com.government.ePemilu.models;
 
 import javax.persistence.*;
+import io.swagger.annotations.ApiModel;
 
+@ApiModel(description="All details about the voter")
 @Entity
 @Table(name="tbl_voters")
 public class Voters {
